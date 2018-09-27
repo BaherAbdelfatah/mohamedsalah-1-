@@ -1,0 +1,31 @@
+$color: black;
+table{
+color: $color;
+tr {
+color:$color;
+}
+th {  color:$color;
+   }
+
+}
+%message{
+  font-family:sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  color:$color;
+}
+.success{
+  @extend %message;
+  background-color: green;
+}
+.warning {
+  @extend %message;
+  background-color: blue;
+}
+.error{
+  @extend %message;
+  background-color: red;
+}
